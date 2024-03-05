@@ -5,7 +5,7 @@ import Logo from "../../imgs/logo.svg";
 import info from "../../imgs/text.png";
 const Home = () => {
   return (
-    <div className="container">
+    <div className="splash-container">
       <img src={header} alt="left decoration" className="left-decoration" />
       <img src={headerR} alt="right decoration" className="right-decoration" />
       <div className="logo-container">
