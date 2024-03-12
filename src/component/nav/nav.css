@@ -1,0 +1,24 @@
+nav {
+  background-image: url("../../imgs/header.svg");
+  background-repeat: no-repeat;
+  background-position: top;
+  background-size: cover;
+  color: #fff;
+  display: flex;
+  justify-content: space-between;
+  padding: 10px 20px;
+}
+
+ul {
+  list-style-type: none;
+  display: flex;
+}
+
+li {
+  margin: 0 10px;
+}
+
+a {
+  text-decoration: none;
+  color: rgb(234, 65, 65);
+}
