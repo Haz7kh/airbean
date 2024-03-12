@@ -1,0 +1,30 @@
+.container {
+  background-color: rgba(243, 228, 225, 1);
+}
+
+.menu-container {
+  display: flex;
+  flex-direction: column; /* Stack the content vertically */
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  background-color: rgba(243, 228, 225, 1);
+}
+
+.content {
+  width: 311px;
+  height: 584px;
+  margin-bottom: 20px; /* Add space between content and owner's photo */
+}
+.title {
+  font-family: PT Serif;
+  font-size: 42px;
+  font-weight: 700;
+  line-height: 50px;
+  letter-spacing: 0em;
+}
+
+.header img,
+.footer img {
+  width: 100%;
+}
