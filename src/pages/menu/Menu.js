@@ -8,12 +8,11 @@ const Menu = () => {
   const [loading, setLoading] = useState(true);
 
   useEffect(() => {
-    fetch("https://airbean.awesomo.dev/api/beans/")
+    fetch("https://airbean-api-xjlcn.ondigitalocean.app/api/beans/")
       .then((response) => response.json())
       .then((data) => {
         console.log("Fetched data:", data);
-
-        setMenuItems(data);
+        setMenuItems(data.menu); // Update to set menuItems to the 'menu' array
         setLoading(false);
       })
       .catch((error) => {
@@ -21,6 +20,9 @@ const Menu = () => {
         setLoading(false);
       });
   }, []);
+
+  console.log("menuItems type:", typeof menuItems);
+  console.log("menuItems:", menuItems);
 
   return (
     <div className="container">
@@ -36,7 +38,8 @@ const Menu = () => {
             <ul>
               {menuItems.map((item) => (
                 <li key={item.id}>
-                  {item.name} - {item.price}
+                  {" "}
+                  +{item.title} - {item.price}
                 </li>
               ))}
             </ul>
