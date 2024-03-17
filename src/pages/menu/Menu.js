@@ -21,8 +21,11 @@ const Menu = () => {
       });
   }, []);
 
-  console.log("menuItems type:", typeof menuItems);
-  console.log("menuItems:", menuItems);
+  const calculateDots = (title) => {
+    const dots = ".........."; // Define the dots string
+    const dotLength = 15 - title.length; // Calculate the number of dots needed
+    return dots.slice(0, Math.max(0, dotLength)); // Return the dots
+  };
 
   return (
     <div className="container">
@@ -35,14 +38,21 @@ const Menu = () => {
           {loading ? (
             <p>Loading menu...</p>
           ) : (
-            <ul>
+            <div>
               {menuItems.map((item) => (
-                <li key={item.id}>
-                  {" "}
-                  +{item.title} - {item.price}
-                </li>
+                <div key={item.id} className="menu-item">
+                  <button className="add-btn">+</button>
+                  <div className="menu-item-details">
+                    <div>
+                      <span className="menu-item-title">{item.title}</span>
+                      <span>{calculateDots(item.title)}</span>
+                      <span>{item.price}</span>
+                    </div>
+                    <div className="menu-item-desc">{item.desc}</div>
+                  </div>
+                </div>
               ))}
-            </ul>
+            </div>
           )}
         </div>
       </div>

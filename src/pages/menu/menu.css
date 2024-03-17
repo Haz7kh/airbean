@@ -12,9 +12,9 @@
 }
 
 .content {
-  width: 311px;
-  height: 584px;
-  margin-bottom: 20px; /* Add space between content and owner's photo */
+  width: 400px;
+  margin-bottom: 20px;
+  padding: 50px;
 }
 .title {
   font-family: PT Serif;
@@ -27,4 +27,35 @@
 .header img,
 .footer img {
   width: 100%;
+}
+
+.menu-item {
+  display: flex;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.add-btn {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  background-color: #007bff;
+  color: white;
+  border: none;
+  padding: 0;
+  font-size: 20px;
+  line-height: 40px;
+  text-align: center;
+  cursor: pointer;
+  margin-right: 10px;
+}
+
+.menu-item-title {
+  font-weight: bold;
+  margin-right: 10px;
+}
+
+.menu-item-desc {
+  font-size: 12px;
+  margin-top: 5px;
 }
