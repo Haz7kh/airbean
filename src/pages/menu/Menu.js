@@ -1,6 +1,5 @@
 import React, { useState, useEffect } from "react";
-import topHead from "../../imgs/toop.svg";
-import bottom from "../../imgs/bottom.svg";
+
 import "./menu.css";
 
 const Menu = () => {
@@ -29,9 +28,6 @@ const Menu = () => {
 
   return (
     <div className="container">
-      <header className="header">
-        <img src={topHead} alt="Header" />
-      </header>
       <div className="menu-container">
         <div className="content">
           <h2 className="title">Meny</h2>
@@ -56,9 +52,6 @@ const Menu = () => {
           )}
         </div>
       </div>
-      <footer className="footer">
-        <img src={bottom} alt="Footer" />
-      </footer>
     </div>
   );
 };

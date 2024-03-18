@@ -6,3 +6,32 @@
     transform: rotate(360deg);
   }
 }
+.header {
+  position: relative; /* Make the header container positioned */
+}
+
+.header img {
+  background-color: rgba(243, 228, 225, 1);
+  position: absolute; /* Position the top image absolutely */
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: -1; /* Ensure the image stays behind other content */
+}
+.footer {
+  background-color: rgba(243, 228, 225, 1);
+  position: relative; /* Position the footer relative to its normal position */
+  width: 100%; /* Make the footer span the entire width */
+  text-align: center; /* Center align the content in the footer */
+}
+.navbar {
+  position: relative; /* Position the navbar container */
+  z-index: 1; /* Ensure the navbar stays above other content */
+
+  margin: 0;
+  padding: 0;
+}
+
+.footer {
+  text-align: center; /* Center align the content in the footer */
+}

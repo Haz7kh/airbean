@@ -1,5 +1,14 @@
+.navbar {
+  margin: 0; /* Remove any default margin */
+  padding: 0; /* Remove any default padding */
+}
+
 .container {
   background-color: rgba(243, 228, 225, 1);
+  min-height: 100vh; /* Use min-height to ensure container expands to fit content */
+  display: flex;
+  justify-content: center; /* Center content horizontally */
+  align-items: center; /* Center content vertically */
 }
 
 .about-container {
@@ -9,12 +18,8 @@
   align-items: center;
   text-align: center;
   background-color: rgba(243, 228, 225, 1);
-}
-
-.content {
-  width: 311px;
-  height: 584px;
-  margin-bottom: 20px; /* Add space between content and owner's photo */
+  max-width: 800px; /* Set maximum width for better readability */
+  padding: 20px; /* Add padding for better spacing */
 }
 
 .title {
@@ -71,9 +76,4 @@
   line-height: 19px;
   letter-spacing: 0em;
   text-align: center;
-}
-
-.header img,
-.footer img {
-  width: 100%;
 }

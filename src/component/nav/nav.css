@@ -1,24 +1,47 @@
+* {
+  margin: 0;
+  box-sizing: 0;
+}
+
+/* ...... navbar & menu ..... */
+
 nav {
-  background-image: url("../../imgs/header.svg");
-  background-repeat: no-repeat;
-  background-position: top;
-  background-size: cover;
-  color: #fff;
+  width: 100%;
+  height: 3em;
+
   display: flex;
+  justify-content: flex-start;
+  padding: 1em;
+}
+
+.burger-menu {
+  height: 100%;
+  width: 4em;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
   justify-content: space-between;
-  padding: 10px 20px;
+  cursor: pointer;
+  border-radius: 50%;
 }
 
-ul {
-  list-style-type: none;
-  display: flex;
+.burger-bar {
+  width: 4em;
+  height: 0.5em;
+  background-color: white;
 }
-
-li {
-  margin: 0 10px;
+.menu {
+  width: 50%;
+  height: 100vh;
+  background-color: black;
+  position: absolute;
+  top: 0;
+  z-index: 1;
 }
-
-a {
-  text-decoration: none;
-  color: rgb(234, 65, 65);
+/* ........slide menu ...... */
+.hidden {
+  display: none;
+}
+.visible {
+  display: inherit;
 }

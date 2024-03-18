@@ -1,15 +1,10 @@
 import React from "react";
 import "./about.css";
 import owner from "../../imgs/image 1.jpg";
-import topHead from "../../imgs/toop.svg";
-import bottom from "../../imgs/bottom.svg";
 
 const AboutPage = () => {
   return (
     <div className="container">
-      <header className="header">
-        <img src={topHead} alt="Header" />
-      </header>
       <div className="about-container">
         <div className="content">
           <h2 className="title">Vårt kaffe</h2>
@@ -47,9 +42,6 @@ const AboutPage = () => {
           <p className="postion">VD & Grundare</p>
         </div>
       </div>
-      <footer className="footer">
-        <img src={bottom} alt="Footer" />
-      </footer>
     </div>
   );
 };
