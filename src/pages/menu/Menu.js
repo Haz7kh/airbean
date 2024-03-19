@@ -21,9 +21,9 @@ const Menu = () => {
   }, []);
 
   const calculateDots = (title) => {
-    const dots = ".........."; // Define the dots string
-    const dotLength = 15 - title.length; // Calculate the number of dots needed
-    return dots.slice(0, Math.max(0, dotLength)); // Return the dots
+    const dots = "..........";
+    const dotLength = 20 - title.length;
+    return dots.slice(0, Math.max(0, dotLength));
   };
 
   return (
