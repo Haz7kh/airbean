@@ -1,0 +1,74 @@
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 70vh;
+}
+
+.form-wrapper {
+  width: 400px;
+  height: 700px;
+  background-color: #f2f2f2;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.form-group {
+  margin-bottom: 40px;
+}
+
+label {
+  display: block;
+  margin-bottom: 8px;
+}
+
+input[type="text"],
+input[type="email"] {
+  width: calc(100% - 16px); /* Adjust for input padding */
+  padding: 8px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+button[type="submit"] {
+  width: 100%;
+  padding: 20px;
+  background-color: #000000;
+  color: white;
+  border: none;
+  border-radius: 40px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+  font-size: 30px;
+  margin-top: 190px;
+}
+
+button[type="submit"]:hover {
+  background-color: #45a049;
+}
+
+.profile-title {
+  font-size: 25px;
+  font-weight: 700;
+  line-height: 50px;
+  letter-spacing: 0em;
+  margin-bottom: 0;
+  text-align: center;
+}
+.profile-text {
+  font-size: 12px;
+  line-height: 19px;
+  letter-spacing: 0em;
+  text-align: center;
+  margin-bottom: 40px;
+}
+.circle-checkbox {
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+}
+
+.circle-checkbox:checked {
+  background-color: #2a442b;
+}

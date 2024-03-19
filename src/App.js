@@ -7,6 +7,7 @@ import Navbar from "./component/nav/Nav";
 import topHead from "../src/imgs/toop.svg";
 import bottom from "../src/imgs/bottom.svg";
 import Status from "./pages/status/Status";
+import Profile from "./pages/profile/Profile";
 
 function App() {
   const location = useLocation();
@@ -26,6 +27,7 @@ function App() {
         <Route path="/about" element={<AboutPage />} />
         <Route path="/menu" element={<Menu />} />
         <Route path="/order-status" element={<Status />} />
+        <Route path="/profile" element={<Profile />} />
       </Routes>
       {isMenuOrAboutPage && (
         <footer className="footer">
