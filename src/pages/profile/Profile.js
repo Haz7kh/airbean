@@ -2,7 +2,7 @@ import React from "react";
 import "./profile.css";
 import Navbar from "../../component/nav/Nav";
 import topHead from "../../imgs/toop.svg";
-
+import Logo from "../../imgs/logo.svg";
 const Profile = () => {
   return (
     <>
