@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import hamburgerIcon from "../../imgs/menu.svg"; // Import your SVG file
+import { Link } from "react-router-dom";
 import "./nav.css"; // Import your navbar styles here
 
 const Navbar = () => {
@@ -37,7 +37,18 @@ const Navbar = () => {
         <button className="close-btn" onClick={closeMenu}>
           X
         </button>
-        {/* Add your menu items here */}
+        <Link to="/menu" className="menu-items" onClick={closeMenu}>
+          Meny
+        </Link>
+        <Link to="/about" className="menu-items" onClick={closeMenu}>
+          Vårt kaffe
+        </Link>
+        <Link to="/profile" className="menu-items" onClick={closeMenu}>
+          Min profil
+        </Link>
+        <Link to="/order-status" className="menu-items" onClick={closeMenu}>
+          Orderstatus
+        </Link>
       </div>
     </div>
   );

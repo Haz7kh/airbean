@@ -32,12 +32,24 @@ nav {
 }
 .menu {
   width: 50%;
-  height: 100vh;
+  height: 30vh;
   background-color: black;
   position: absolute;
   top: 0;
   z-index: 1;
 }
+.menu-items {
+  display: block;
+  margin-bottom: 10px; /* Adjust spacing between menu items */
+  text-decoration: none;
+  color: #f3f3f3;
+  font-size: 18px;
+  text-align: center;
+}
+.menu-item:hover {
+  color: #7f69f9;
+}
+
 /* ........slide menu ...... */
 .hidden {
   display: none;

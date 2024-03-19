@@ -1,0 +1,27 @@
+.order-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh; /* Adjust as needed */
+  background-color: rgba(229, 103, 78, 1);
+  padding: 10px;
+  color: aliceblue;
+}
+
+.centered {
+  text-align: center;
+}
+.centered > * {
+  margin-top: 30px;
+  margin-bottom: 10px;
+}
+
+.btn-cool {
+  width: 128px;
+  height: 34px;
+  padding: 10px;
+  border-radius: 10px;
+
+  top: 541px;
+  left: 126px;
+}
