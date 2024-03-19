@@ -10,7 +10,7 @@ const Profile = () => {
         <Navbar />
         <img src={topHead} alt="Header" />
       </header>
-      <div className="container">
+      <div className="profile-container">
         <div className="form-wrapper">
           <h2 className="profile-title">Välkommen till</h2>
           <h2 className="profile-title">AirBean-familjen!</h2>
