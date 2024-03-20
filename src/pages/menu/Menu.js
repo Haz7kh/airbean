@@ -1,10 +1,12 @@
 import React, { useState, useEffect } from "react";
+// import Cart from "../../component/cart/Cart";
 
 import "./menu.css";
 
 const Menu = () => {
   const [menuItems, setMenuItems] = useState([]);
   const [loading, setLoading] = useState(true);
+  const [cartItems, setCartItems] = useState([]);
 
   useEffect(() => {
     fetch("https://airbean-api-xjlcn.ondigitalocean.app/api/beans/")
@@ -26,6 +28,11 @@ const Menu = () => {
     return dots.slice(0, Math.max(0, dotLength));
   };
 
+  const addToCart = (item) => {
+    console.log("Item added to cart:", item);
+    setCartItems([...cartItems, item]);
+  };
+
   return (
     <div className="container">
       <div className="menu-container">
@@ -37,7 +44,9 @@ const Menu = () => {
             <div>
               {menuItems.map((item) => (
                 <div key={item.id} className="menu-item">
-                  <button className="add-btn">+</button>
+                  <button className="add-btn" onClick={() => addToCart(item)}>
+                    +
+                  </button>
                   <div className="menu-item-details">
                     <div>
                       <span className="menu-item-title">{item.title}</span>
@@ -52,6 +61,11 @@ const Menu = () => {
           )}
         </div>
       </div>
+      {/* <Cart
+        lastCartItem={
+          cartItems.length > 0 ? cartItems[cartItems.length - 1] : null
+        }
+      /> */}
     </div>
   );
 };

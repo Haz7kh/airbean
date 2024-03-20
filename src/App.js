@@ -8,11 +8,14 @@ import topHead from "../src/imgs/toop.svg";
 import bottom from "../src/imgs/bottom.svg";
 import Status from "./pages/status/Status";
 import Profile from "./pages/profile/Profile";
+import Cart from "./component/cart/Cart";
 
 function App() {
   const location = useLocation();
   const isMenuOrAboutPage =
-    location.pathname === "/menu" || location.pathname === "/about";
+    location.pathname === "/menu" ||
+    location.pathname === "/about" ||
+    location.pathname === "/cart";
 
   return (
     <>
@@ -28,6 +31,7 @@ function App() {
         <Route path="/menu" element={<Menu />} />
         <Route path="/order-status" element={<Status />} />
         <Route path="/profile" element={<Profile />} />
+        <Route path="/cart" element={<Cart />} />
       </Routes>
       {isMenuOrAboutPage && (
         <footer className="footer">
