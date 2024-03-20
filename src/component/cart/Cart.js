@@ -4,8 +4,6 @@ import Navbar from "../../component/nav/Nav";
 import topHead from "../../imgs/toop.svg";
 
 const Cart = () => {
-  const [cartItems, setCartItems] = useState([]); // State to maintain cart items
-
   return (
     <>
       <header className="header">
