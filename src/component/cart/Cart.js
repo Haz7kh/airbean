@@ -1,18 +1,24 @@
-// import React from "react";
+// Cart.js
+import React, { useState } from "react";
+import Navbar from "../../component/nav/Nav";
+import topHead from "../../imgs/toop.svg";
 
-// const Cart = ({ lastCartItem }) => {
-//   return (
-//     <div className="menu">
-//       <h2>Cart</h2>
-//       {/* {lastCartItem && (
-//         <div>
-//           <p>Last added item:</p>
-//           <p>Title: {lastCartItem.title}</p>
-//           <p>Price: {lastCartItem.price}</p>
-//         </div>
-//       )} */}
-//     </div>
-//   );
-// };
+const Cart = () => {
+  const [cartItems, setCartItems] = useState([]); // State to maintain cart items
 
-// export default Cart;
+  return (
+    <>
+      <header className="header">
+        <Navbar />
+        <img src={topHead} alt="Header" />
+      </header>
+      <div className="profile-container">
+        <div className="form-wrapper">
+          <h2>Din oreder:</h2>
+        </div>
+      </div>
+    </>
+  );
+};
+
+export default Cart;

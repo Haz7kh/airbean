@@ -1,12 +1,11 @@
 import React, { useState, useEffect } from "react";
-// import Cart from "../../component/cart/Cart";
 
 import "./menu.css";
 
 const Menu = () => {
   const [menuItems, setMenuItems] = useState([]);
   const [loading, setLoading] = useState(true);
-  const [cartItems, setCartItems] = useState([]);
+  const [cart, setCart] = useState([]);
 
   useEffect(() => {
     fetch("https://airbean-api-xjlcn.ondigitalocean.app/api/beans/")
@@ -29,8 +28,8 @@ const Menu = () => {
   };
 
   const addToCart = (item) => {
-    console.log("Item added to cart:", item);
-    setCartItems([...cartItems, item]);
+    console.log("Item added to cart:", cart);
+    setCart([...cart, item]);
   };
 
   return (
@@ -61,11 +60,6 @@ const Menu = () => {
           )}
         </div>
       </div>
-      {/* <Cart
-        lastCartItem={
-          cartItems.length > 0 ? cartItems[cartItems.length - 1] : null
-        }
-      /> */}
     </div>
   );
 };
